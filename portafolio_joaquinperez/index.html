@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Joaquín Pérez · Desarrollador Fullstack Python</title>
+<meta name="description" content="Portafolio de Joaquín Pérez, desarrollador en formación: HTML, CSS, JavaScript, Python, Git y GitHub.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a href="#inicio" class="logo">jp<span>.dev</span></a>
+  <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+  <nav id="menu">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#skills">Skills</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#video">Video</a>
+    <a href="#contacto">Contacto</a>
+    <button id="tema" class="chip" aria-label="Cambiar tema">Tema</button>
+  </nav>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <p class="hello">Hola, soy</p>
+  <h1>Joaquín Pérez</h1>
+  <p class="lead">Desarrollador fullstack en formación. Aprendo construyendo: hoy HTML, CSS, JavaScript y Python con Flask; mañana, lo que haga falta.</p>
+  <div class="cta">
+    <a class="btn" href="#proyectos">Ver proyectos</a>
+    <a class="btn ghost" href="#contacto">Escribirme</a>
+  </div>
+  <div class="term">
+    <div class="bar" role="group" aria-label="Elige el color del sitio">
+      <button data-c="#1fa971" aria-label="Color verde" style="--c:#1fa971"></button>
+      <button data-c="#e4454d" aria-label="Color rojo" style="--c:#e4454d"></button>
+      <button data-c="#2f5bea" aria-label="Color azul" style="--c:#2f5bea"></button>
+      <button data-c="#d6489b" aria-label="Color rosado" style="--c:#d6489b"></button>
+      <span>portafolio.js · elige un color</span>
+    </div>
+    <pre id="code" aria-label="Resumen de perfil en código"></pre>
+  </div>
+</section>
+
+<section id="sobre-mi" class="sec">
+  <h2>Sobre mí</h2>
+  <div class="two">
+    <p>Estudio el programa Fullstack Python de Skillnest. Me gusta programar, entender cómo funcionan las cosas por dentro y arreglarlas cuando fallan. Aprendo mejor construyendo cosas reales, probando y equivocándome.</p>
+    <p>Busco una práctica o un primer empleo donde pueda aportar, aprender de un equipo y seguir creciendo en desarrollo web con Python.</p>
+  </div>
+  <ul class="stats">
+    <li><b data-n="3">0</b> proyectos</li>
+    <li><b data-n="6">0</b> tecnologías</li>
+    <li><b data-n="1">0</b> certificación en curso</li>
+  </ul>
+</section>
+
+<section id="skills" class="sec">
+  <h2>Tecnologías y habilidades</h2>
+  <div class="skills">
+    <div class="skill" data-lvl="80"><span>HTML</span><i></i></div>
+    <div class="skill" data-lvl="75"><span>CSS</span><i></i></div>
+    <div class="skill" data-lvl="65"><span>JavaScript</span><i></i></div>
+    <div class="skill" data-lvl="60"><span>Python</span><i></i></div>
+    <div class="skill" data-lvl="60"><span>Flask</span><i></i></div>
+    <div class="skill" data-lvl="70"><span>Git y GitHub</span><i></i></div>
+  </div>
+</section>
+
+<section id="proyectos" class="sec">
+  <h2>Proyectos</h2>
+  <div class="filters" role="group" aria-label="Filtrar proyectos">
+    <button class="chip on" data-f="all">Todos</button>
+    <button class="chip" data-f="python">Python</button>
+    <button class="chip" data-f="web">Web</button>
+  </div>
+  <div class="cards">
+    <article class="card" data-t="python">
+      <div class="art a1">🐍</div>
+      <h3>Skillnest Fullstack Python</h3>
+      <p>Ejercicios y proyectos del curso: aplicaciones en Python con Flask.</p>
+      <p class="tags">Python · Flask · Git</p>
+      <div class="row">
+        <button class="link more" data-i="0">Detalles</button>
+        <a class="link" href="https://github.com/joaquinperez07/Skillnest_fullStack_Python" target="_blank" rel="noopener">Repositorio</a>
+      </div>
+    </article>
+    <article class="card" data-t="web">
+      <div class="art a2">🍔</div>
+      <h3>Réplica de Burger King</h3>
+      <p>Réplica del sitio web de Burger King, construida con HTML, CSS y JavaScript.</p>
+      <p class="tags">HTML · CSS · JavaScript</p>
+      <div class="row">
+        <button class="link more" data-i="1">Detalles</button>
+        <a class="link" href="https://github.com/joaquinperez07/Burger_king_replica-main" target="_blank" rel="noopener">Repositorio</a>
+      </div>
+    </article>
+    <article class="card" data-t="web">
+      <div class="art a3">{ }</div>
+      <h3>Este portafolio</h3>
+      <p>Sitio responsivo hecho a mano, sin plantillas, con tema, filtros y modal.</p>
+      <p class="tags">HTML · CSS · JavaScript · GitHub Pages</p>
+      <div class="row">
+        <button class="link more" data-i="2">Detalles</button>
+        <a class="link" href="https://github.com/joaquinperez07" target="_blank" rel="noopener">Repositorio</a>
+      </div>
+    </article>
+  </div>
+  <h3 class="sub">Tareas y ejercicios adicionales</h3>
+  <ul class="extra">
+    <li>Ejercicios de Python de la carpeta <code>python/</code> del repositorio del curso.</li>
+    <li>Prácticas de HTML, CSS y JavaScript del módulo front-end.</li>
+  </ul>
+</section>
+
+<section id="video" class="sec">
+  <h2>Mi presentación en video</h2>
+  <video controls preload="metadata" poster="media/poster.jpg">
+    <source src="media/presentacion.mp4" type="video/mp4">
+    Tu navegador no puede reproducir este video.
+  </video>
+</section>
+
+<section id="contacto" class="sec">
+  <h2>Contacto</h2>
+  <p>Escríbeme a <a href="mailto:joaquinperezp07@gmail.com">joaquinperezp07@gmail.com</a> o encuéntrame en <a href="https://www.linkedin.com/in/joaquin-perez-8268013b9" target="_blank" rel="noopener">LinkedIn</a> y <a href="https://github.com/joaquinperez07" target="_blank" rel="noopener">GitHub</a>.</p>
+  <div class="form">
+    <label>Tu nombre <input id="nom" type="text" autocomplete="name"></label>
+    <label>Mensaje <textarea id="msg" rows="4"></textarea></label>
+    <button class="btn" id="enviar">Abrir correo</button>
+    <p id="aviso" role="status"></p>
+  </div>
+</section>
+</main>
+
+<footer><p>© 2026 Joaquín Pérez · Hecho con HTML, CSS y JavaScript</p></footer>
+
+<dialog id="modal">
+  <h3 id="mt"></h3>
+  <p id="mp"></p>
+  <button class="btn" id="cerrar">Cerrar</button>
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
